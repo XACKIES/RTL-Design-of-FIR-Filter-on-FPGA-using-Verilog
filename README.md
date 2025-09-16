@@ -15,8 +15,43 @@ Coefficient Design tool by : [FIR_Coeff_Design.py](https://github.com/XACKIES/RT
 ## Filter Stucture  , Transversal Form
 
 
+Reference : Digital Signal Processing Fundamentals and Applications 2'nd edition Li Tan,Jean Jiang
+
 ![pic0](https://github.com/XACKIES/RTL-Design-of-a-FIR-Filter-on-FPGA-using-Verilog/blob/main/Doc/FIR%20filter%20realization%20Transversal%20form.png)
-ref : Digital Signal Processing Fundamentals and Applications 2'nd edition Li Tan,Jean Jiang
+
+
+```verilog
+    // ===== Multiply Stage =====
+    genvar i;
+    generate
+        for (i = 0; i < 41; i = i + 1) begin : mult_stage
+            assign products[i] = delay_line[i] * coeffs[i];
+        end
+    endgenerate
+
+    // ===== Main Logic =====
+    integer j;
+    always @(posedge clk) begin
+        // Shift delay line
+        for (j = 40; j > 0; j = j - 1) begin
+            delay_line[j] <= delay_line[j - 1];
+        end
+        delay_line[0] <= data_in;
+
+        // Single-stage sum
+        sum = 0;
+        for (j = 0; j < 41; j = j + 1) begin
+            sum = sum + products[j];
+        end
+
+        // Assign to output
+        data_out <= sum;
+    end
+```
+Verilog Code : [FIR Filter.v](https://github.com/XACKIES/RTL-Design-of-FIR-Filter-on-FPGA-using-Verilog/blob/main/RTL/FIR_Lowpass_Filter.v) 
+
+
+
 
 ----
 
