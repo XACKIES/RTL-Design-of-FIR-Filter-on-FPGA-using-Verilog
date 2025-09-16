@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2023.2
+| Date         : Thu Jul 17 11:29:29 2025
+| Host         : MACKIESs_PC
+| Design       : checkpoint_FIR_Lowpass_Filter
+| Device       : xc7k70t-fbv676-1--
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+

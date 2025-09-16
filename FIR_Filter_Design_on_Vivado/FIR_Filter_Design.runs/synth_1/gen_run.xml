@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1752726330" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/FIR_Lowpass_Filter.dcp">
+  <File Type="PA-TCL" Name="FIR_Lowpass_Filter.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FIR_Lowpass_Filter_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FIR_Lowpass_Filter_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FIR_Lowpass_Filter.vds"/>
+  <File Type="RDS-UTIL" Name="FIR_Lowpass_Filter_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FIR_Lowpass_Filter_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FIR_Lowpass_Filter.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FIR_Lowpass_Filter_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FIR_Lowpass_Filter_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/FIR_Lowpass_Filter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Bit_width_Casting.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/FIR_design_1/FIR_design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/FIR_design_1/hdl/FIR_design_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FIR_Lowpass_Filter"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/FIR_Lowpass_Filter.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/FIR_Lowpass_Filter.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_c_addsub_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_dds_compiler_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Sine_wave_10MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_c_addsub_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Sine_wave_500MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_FIR_Lowpass_Filter_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_FIR_Lowpass_Filter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_c_addsub_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Sine_wave_1MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Sine_wave_3o5MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_c_addsub_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_c_addsub_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_0_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_c_addsub_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_0_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_FIR_Lowpass_Filter_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIR_design_1_Bit_width_Casting_6_0"/>
+</GenRun>

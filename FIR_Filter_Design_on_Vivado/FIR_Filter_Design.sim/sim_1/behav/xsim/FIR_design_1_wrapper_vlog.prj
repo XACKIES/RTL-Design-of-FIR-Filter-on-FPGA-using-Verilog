@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FIR_Filter_Design.srcs/sources_1/new/Bit_width_Casting.v" \
+"../../../../FIR_Filter_Design.srcs/sources_1/new/FIR_Lowpass_Filter.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_0_0/sim/FIR_design_1_Bit_width_Casting_0_0.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_FIR_Lowpass_Filter_0_1/sim/FIR_design_1_FIR_Lowpass_Filter_0_1.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_0_1/sim/FIR_design_1_Bit_width_Casting_0_1.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_sim_clk_gen_0_0/sim/FIR_design_1_sim_clk_gen_0_0.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_0_2/sim/FIR_design_1_Bit_width_Casting_0_2.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_0_3/sim/FIR_design_1_Bit_width_Casting_0_3.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_0_4/sim/FIR_design_1_Bit_width_Casting_0_4.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_0_5/sim/FIR_design_1_Bit_width_Casting_0_5.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_1_0/sim/FIR_design_1_Bit_width_Casting_1_0.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_FIR_Lowpass_Filter_0_2/sim/FIR_design_1_FIR_Lowpass_Filter_0_2.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_FIR_Lowpass_Filter_1_0/sim/FIR_design_1_FIR_Lowpass_Filter_1_0.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/ip/FIR_design_1_Bit_width_Casting_6_0/sim/FIR_design_1_Bit_width_Casting_6_0.v" \
+"../../../../FIR_Filter_Design.ip_user_files/bd/FIR_design_1/sim/FIR_design_1.v" \
+"../../../../FIR_Filter_Design.gen/sources_1/bd/FIR_design_1/hdl/FIR_design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
