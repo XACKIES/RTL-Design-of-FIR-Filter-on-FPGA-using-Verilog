@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jul 17 11:15:23 2025
+# Process ID: 34048
+# Current directory: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1
+# Command line: vivado.exe -log FIR_design_1_c_addsub_3_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_design_1_c_addsub_3_0.tcl
+# Log file: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1/FIR_design_1_c_addsub_3_0.vds
+# Journal file: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1\vivado.jou
+# Running On: MACKIESs_PC, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 6, Host memory: 16905 MB
+#-----------------------------------------------------------
+source FIR_design_1_c_addsub_3_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 473.027 ; gain = 176.863
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: FIR_design_1_c_addsub_3_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 14d33afcfba85d63 to dir: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.cache/ip/2023.2/1/4/14d33afcfba85d63/FIR_design_1_c_addsub_0_0.dcp to C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1/FIR_design_1_c_addsub_3_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.cache/ip/2023.2/1/4/14d33afcfba85d63/FIR_design_1_c_addsub_0_0_sim_netlist.v to C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1/FIR_design_1_c_addsub_3_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.cache/ip/2023.2/1/4/14d33afcfba85d63/FIR_design_1_c_addsub_0_0_sim_netlist.vhdl to C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1/FIR_design_1_c_addsub_3_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.cache/ip/2023.2/1/4/14d33afcfba85d63/FIR_design_1_c_addsub_0_0_stub.v to C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1/FIR_design_1_c_addsub_3_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.cache/ip/2023.2/1/4/14d33afcfba85d63/FIR_design_1_c_addsub_0_0_stub.vhdl to C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_c_addsub_3_0_synth_1/FIR_design_1_c_addsub_3_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP FIR_design_1_c_addsub_3_0, cache-ID = 14d33afcfba85d63.
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 17 11:15:38 2025...

@@ -1,0 +1,1068 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE6C68C00E6C68C0",
+      "device": "xc7k70tfbv676-1",
+      "gen_directory": "../../../../FIR_Filter_Design.gen/sources_1/bd/FIR_design_1",
+      "name": "FIR_design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "Sine_wave_500kHz": "",
+      "Sine_wave_10MHz": "",
+      "c_addsub_0": "",
+      "Bit_width_Casting_0": "",
+      "FIR_Lowpass_Filter_0": "",
+      "Bit_width_Casting_1": "",
+      "Sine_wave_1MHz": "",
+      "Sine_wave_3o5MHz": "",
+      "Sine_wave_6MHz1": "",
+      "Bit_width_Casting_2": "",
+      "Bit_width_Casting_3": "",
+      "Bit_width_Casting_4": "",
+      "Bit_width_Casting_5": "",
+      "c_addsub_1": "",
+      "c_addsub_2": "",
+      "c_addsub_3": "",
+      "Bit_width_Casting_6": "",
+      "FIR_Lowpass_Filter_1": "",
+      "c_addsub_4": "",
+      "c_addsub_5": "",
+      "FIR_Lowpass_Filter_2": "",
+      "Bit_width_Casting_7": "",
+      "sim_clk_gen_0": ""
+    },
+    "ports": {
+      "Output_Transition_Band": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "Output_Transition_Band_raw": {
+        "direction": "O",
+        "left": "40",
+        "right": "0"
+      },
+      "Transition_Band_Signal": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Output_All_Freq": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "Output_All_Freq_raw": {
+        "direction": "O",
+        "left": "40",
+        "right": "0"
+      },
+      "All_Freq_Signal": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Output_Filtered": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "Output_Filtered_raw": {
+        "direction": "O",
+        "left": "40",
+        "right": "0"
+      },
+      "Mixed_Signal": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Sine_500kHz": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Sine_1MHz": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Sine_3o5MHz": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Sine_6MHz": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "Sine_10MHz": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Sine_wave_500kHz": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "23",
+        "xci_name": "FIR_design_1_dds_compiler_0_1",
+        "xci_path": "ip\\FIR_design_1_dds_compiler_0_1\\FIR_design_1_dds_compiler_0_1.xci",
+        "inst_hier_path": "Sine_wave_500kHz",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "3"
+          },
+          "Latency_Configuration": {
+            "value": "Auto"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Output_Frequency1": {
+            "value": "0.5"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "PINC1": {
+            "value": "101000111101011100001"
+          }
+        }
+      },
+      "Sine_wave_10MHz": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "23",
+        "xci_name": "FIR_design_1_Sine_wave_500MHz_0",
+        "xci_path": "ip\\FIR_design_1_Sine_wave_500MHz_0\\FIR_design_1_Sine_wave_500MHz_0.xci",
+        "inst_hier_path": "Sine_wave_10MHz",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Output_Frequency1": {
+            "value": "10"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "PINC1": {
+            "value": "1100110011001100110011001"
+          }
+        }
+      },
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "16",
+        "xci_name": "FIR_design_1_c_addsub_0_0",
+        "xci_path": "ip\\FIR_design_1_c_addsub_0_0\\FIR_design_1_c_addsub_0_0.xci",
+        "inst_hier_path": "c_addsub_0",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "Add_Mode": {
+            "value": "Add"
+          },
+          "B_Constant": {
+            "value": "false"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "C_In": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "Bit_width_Casting_0": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_0_0",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_0_0\\FIR_design_1_Bit_width_Casting_0_0.xci",
+        "inst_hier_path": "Bit_width_Casting_0",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 9} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 9",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "FIR_Lowpass_Filter_0": {
+        "vlnv": "xilinx.com:module_ref:FIR_Lowpass_Filter:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_FIR_Lowpass_Filter_0_1",
+        "xci_path": "ip\\FIR_design_1_FIR_Lowpass_Filter_0_1\\FIR_design_1_FIR_Lowpass_Filter_0_1.xci",
+        "inst_hier_path": "FIR_Lowpass_Filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FIR_Lowpass_Filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "FIR_design_1_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "40",
+            "right": "0"
+          }
+        }
+      },
+      "Bit_width_Casting_1": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_0_1",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_0_1\\FIR_design_1_Bit_width_Casting_0_1.xci",
+        "inst_hier_path": "Bit_width_Casting_1",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "41"
+          },
+          "OUTPUT_WIDTH": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "40",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Sine_wave_1MHz": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "23",
+        "xci_name": "FIR_design_1_Sine_wave_10MHz_0",
+        "xci_path": "ip\\FIR_design_1_Sine_wave_10MHz_0\\FIR_design_1_Sine_wave_10MHz_0.xci",
+        "inst_hier_path": "Sine_wave_1MHz",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Output_Frequency1": {
+            "value": "1"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "PINC1": {
+            "value": "1010001111010111000010"
+          }
+        }
+      },
+      "Sine_wave_3o5MHz": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "23",
+        "xci_name": "FIR_design_1_Sine_wave_1MHz_0",
+        "xci_path": "ip\\FIR_design_1_Sine_wave_1MHz_0\\FIR_design_1_Sine_wave_1MHz_0.xci",
+        "inst_hier_path": "Sine_wave_3o5MHz",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Output_Frequency1": {
+            "value": "3.5"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "PINC1": {
+            "value": "100011110101110000101000"
+          }
+        }
+      },
+      "Sine_wave_6MHz1": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "ip_revision": "23",
+        "xci_name": "FIR_design_1_Sine_wave_3o5MHz_0",
+        "xci_path": "ip\\FIR_design_1_Sine_wave_3o5MHz_0\\FIR_design_1_Sine_wave_3o5MHz_0.xci",
+        "inst_hier_path": "Sine_wave_6MHz1",
+        "parameters": {
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Output_Frequency1": {
+            "value": "6"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "PINC1": {
+            "value": "111101011100001010001111"
+          }
+        }
+      },
+      "Bit_width_Casting_2": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_0_2",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_0_2\\FIR_design_1_Bit_width_Casting_0_2.xci",
+        "inst_hier_path": "Bit_width_Casting_2",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Bit_width_Casting_3": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_0_3",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_0_3\\FIR_design_1_Bit_width_Casting_0_3.xci",
+        "inst_hier_path": "Bit_width_Casting_3",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Bit_width_Casting_4": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_0_4",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_0_4\\FIR_design_1_Bit_width_Casting_0_4.xci",
+        "inst_hier_path": "Bit_width_Casting_4",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Bit_width_Casting_5": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_0_5",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_0_5\\FIR_design_1_Bit_width_Casting_0_5.xci",
+        "inst_hier_path": "Bit_width_Casting_5",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "c_addsub_1": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "16",
+        "xci_name": "FIR_design_1_c_addsub_0_1",
+        "xci_path": "ip\\FIR_design_1_c_addsub_0_1\\FIR_design_1_c_addsub_0_1.xci",
+        "inst_hier_path": "c_addsub_1",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "Add_Mode": {
+            "value": "Add"
+          },
+          "B_Constant": {
+            "value": "false"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "C_In": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "c_addsub_2": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "16",
+        "xci_name": "FIR_design_1_c_addsub_0_2",
+        "xci_path": "ip\\FIR_design_1_c_addsub_0_2\\FIR_design_1_c_addsub_0_2.xci",
+        "inst_hier_path": "c_addsub_2",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "Add_Mode": {
+            "value": "Add"
+          },
+          "B_Constant": {
+            "value": "false"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "C_In": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "c_addsub_3": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "16",
+        "xci_name": "FIR_design_1_c_addsub_0_3",
+        "xci_path": "ip\\FIR_design_1_c_addsub_0_3\\FIR_design_1_c_addsub_0_3.xci",
+        "inst_hier_path": "c_addsub_3",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "Add_Mode": {
+            "value": "Add"
+          },
+          "B_Constant": {
+            "value": "false"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "C_In": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "Bit_width_Casting_6": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_1_0",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_1_0\\FIR_design_1_Bit_width_Casting_1_0.xci",
+        "inst_hier_path": "Bit_width_Casting_6",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "41"
+          },
+          "OUTPUT_WIDTH": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "40",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "FIR_Lowpass_Filter_1": {
+        "vlnv": "xilinx.com:module_ref:FIR_Lowpass_Filter:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_FIR_Lowpass_Filter_0_2",
+        "xci_path": "ip\\FIR_design_1_FIR_Lowpass_Filter_0_2\\FIR_design_1_FIR_Lowpass_Filter_0_2.xci",
+        "inst_hier_path": "FIR_Lowpass_Filter_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FIR_Lowpass_Filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "FIR_design_1_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "40",
+            "right": "0"
+          }
+        }
+      },
+      "c_addsub_4": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "16",
+        "xci_name": "FIR_design_1_c_addsub_3_0",
+        "xci_path": "ip\\FIR_design_1_c_addsub_3_0\\FIR_design_1_c_addsub_3_0.xci",
+        "inst_hier_path": "c_addsub_4",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "Add_Mode": {
+            "value": "Add"
+          },
+          "B_Constant": {
+            "value": "false"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "C_In": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "c_addsub_5": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "ip_revision": "16",
+        "xci_name": "FIR_design_1_c_addsub_4_0",
+        "xci_path": "ip\\FIR_design_1_c_addsub_4_0\\FIR_design_1_c_addsub_4_0.xci",
+        "inst_hier_path": "c_addsub_5",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "Add_Mode": {
+            "value": "Add"
+          },
+          "B_Constant": {
+            "value": "false"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "C_In": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "FIR_Lowpass_Filter_2": {
+        "vlnv": "xilinx.com:module_ref:FIR_Lowpass_Filter:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_FIR_Lowpass_Filter_1_0",
+        "xci_path": "ip\\FIR_design_1_FIR_Lowpass_Filter_1_0\\FIR_design_1_FIR_Lowpass_Filter_1_0.xci",
+        "inst_hier_path": "FIR_Lowpass_Filter_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FIR_Lowpass_Filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "FIR_design_1_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "40",
+            "right": "0"
+          }
+        }
+      },
+      "Bit_width_Casting_7": {
+        "vlnv": "xilinx.com:module_ref:Bit_width_Casting:1.0",
+        "ip_revision": "1",
+        "xci_name": "FIR_design_1_Bit_width_Casting_6_0",
+        "xci_path": "ip\\FIR_design_1_Bit_width_Casting_6_0\\FIR_design_1_Bit_width_Casting_6_0.xci",
+        "inst_hier_path": "Bit_width_Casting_7",
+        "parameters": {
+          "INPUT_WIDTH": {
+            "value": "41"
+          },
+          "OUTPUT_WIDTH": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Bit_width_Casting",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din": {
+            "direction": "I",
+            "left": "40",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "ip_revision": "3",
+        "xci_name": "FIR_design_1_sim_clk_gen_0_1",
+        "xci_path": "ip\\FIR_design_1_sim_clk_gen_0_1\\FIR_design_1_sim_clk_gen_0_1.xci",
+        "inst_hier_path": "sim_clk_gen_0"
+      }
+    },
+    "nets": {
+      "Bit_width_Casting_0_dout": {
+        "ports": [
+          "Bit_width_Casting_0/dout",
+          "c_addsub_0/A",
+          "c_addsub_4/A",
+          "Sine_500kHz"
+        ]
+      },
+      "Bit_width_Casting_1_dout": {
+        "ports": [
+          "Bit_width_Casting_1/dout",
+          "Output_All_Freq"
+        ]
+      },
+      "Bit_width_Casting_2_dout": {
+        "ports": [
+          "Bit_width_Casting_2/dout",
+          "c_addsub_0/B",
+          "c_addsub_5/A",
+          "Sine_1MHz"
+        ]
+      },
+      "Bit_width_Casting_3_dout": {
+        "ports": [
+          "Bit_width_Casting_3/dout",
+          "c_addsub_1/A",
+          "Sine_3o5MHz"
+        ]
+      },
+      "Bit_width_Casting_4_dout": {
+        "ports": [
+          "Bit_width_Casting_4/dout",
+          "c_addsub_1/B",
+          "c_addsub_5/B",
+          "Sine_6MHz"
+        ]
+      },
+      "Bit_width_Casting_5_dout": {
+        "ports": [
+          "Bit_width_Casting_5/dout",
+          "c_addsub_3/B",
+          "Sine_10MHz",
+          "c_addsub_4/B"
+        ]
+      },
+      "Bit_width_Casting_6_dout": {
+        "ports": [
+          "Bit_width_Casting_6/dout",
+          "Output_Filtered"
+        ]
+      },
+      "Bit_width_Casting_7_dout": {
+        "ports": [
+          "Bit_width_Casting_7/dout",
+          "Output_Transition_Band"
+        ]
+      },
+      "FIR_Lowpass_Filter_0_data_out": {
+        "ports": [
+          "FIR_Lowpass_Filter_0/data_out",
+          "Bit_width_Casting_1/din",
+          "Output_All_Freq_raw"
+        ]
+      },
+      "FIR_Lowpass_Filter_1_data_out": {
+        "ports": [
+          "FIR_Lowpass_Filter_1/data_out",
+          "Bit_width_Casting_6/din",
+          "Output_Filtered_raw"
+        ]
+      },
+      "FIR_Lowpass_Filter_2_data_out": {
+        "ports": [
+          "FIR_Lowpass_Filter_2/data_out",
+          "Bit_width_Casting_7/din",
+          "Output_Transition_Band_raw"
+        ]
+      },
+      "Sine_wave_10MHz_m_axis_data_tdata": {
+        "ports": [
+          "Sine_wave_10MHz/m_axis_data_tdata",
+          "Bit_width_Casting_5/din"
+        ]
+      },
+      "Sine_wave_1MHz_m_axis_data_tdata": {
+        "ports": [
+          "Sine_wave_1MHz/m_axis_data_tdata",
+          "Bit_width_Casting_2/din"
+        ]
+      },
+      "Sine_wave_3o5MHz1_m_axis_data_tdata": {
+        "ports": [
+          "Sine_wave_6MHz1/m_axis_data_tdata",
+          "Bit_width_Casting_4/din"
+        ]
+      },
+      "Sine_wave_3o5MHz_m_axis_data_tdata": {
+        "ports": [
+          "Sine_wave_3o5MHz/m_axis_data_tdata",
+          "Bit_width_Casting_3/din"
+        ]
+      },
+      "Sine_wave_500kHz_m_axis_data_tdata": {
+        "ports": [
+          "Sine_wave_500kHz/m_axis_data_tdata",
+          "Bit_width_Casting_0/din"
+        ]
+      },
+      "c_addsub_0_S": {
+        "ports": [
+          "c_addsub_0/S",
+          "c_addsub_2/A"
+        ]
+      },
+      "c_addsub_1_S": {
+        "ports": [
+          "c_addsub_1/S",
+          "c_addsub_2/B"
+        ]
+      },
+      "c_addsub_2_S": {
+        "ports": [
+          "c_addsub_2/S",
+          "c_addsub_3/A"
+        ]
+      },
+      "c_addsub_3_S": {
+        "ports": [
+          "c_addsub_3/S",
+          "FIR_Lowpass_Filter_0/data_in",
+          "All_Freq_Signal"
+        ]
+      },
+      "c_addsub_4_S": {
+        "ports": [
+          "c_addsub_4/S",
+          "FIR_Lowpass_Filter_1/data_in",
+          "Mixed_Signal"
+        ]
+      },
+      "c_addsub_5_S": {
+        "ports": [
+          "c_addsub_5/S",
+          "FIR_Lowpass_Filter_2/data_in",
+          "Transition_Band_Signal"
+        ]
+      },
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "Sine_wave_500kHz/aclk",
+          "Sine_wave_1MHz/aclk",
+          "Sine_wave_3o5MHz/aclk",
+          "Sine_wave_6MHz1/aclk",
+          "Sine_wave_10MHz/aclk",
+          "FIR_Lowpass_Filter_0/clk",
+          "c_addsub_2/CLK",
+          "c_addsub_0/CLK",
+          "c_addsub_1/CLK",
+          "c_addsub_3/CLK",
+          "FIR_Lowpass_Filter_1/clk",
+          "c_addsub_4/CLK",
+          "c_addsub_5/CLK",
+          "FIR_Lowpass_Filter_2/clk"
+        ]
+      }
+    }
+  }
+}

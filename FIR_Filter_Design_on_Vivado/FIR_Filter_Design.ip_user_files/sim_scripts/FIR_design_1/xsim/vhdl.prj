@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/FIR_design_1/ip/FIR_design_1_dds_compiler_0_1/sim/FIR_design_1_dds_compiler_0_1.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_Sine_wave_500MHz_0/sim/FIR_design_1_Sine_wave_500MHz_0.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_c_addsub_0_0/sim/FIR_design_1_c_addsub_0_0.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_Sine_wave_10MHz_0/sim/FIR_design_1_Sine_wave_10MHz_0.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_Sine_wave_1MHz_0/sim/FIR_design_1_Sine_wave_1MHz_0.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_Sine_wave_3o5MHz_0/sim/FIR_design_1_Sine_wave_3o5MHz_0.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_c_addsub_0_1/sim/FIR_design_1_c_addsub_0_1.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_c_addsub_0_2/sim/FIR_design_1_c_addsub_0_2.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_c_addsub_0_3/sim/FIR_design_1_c_addsub_0_3.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_c_addsub_3_0/sim/FIR_design_1_c_addsub_3_0.vhd" \
+"../../../bd/FIR_design_1/ip/FIR_design_1_c_addsub_4_0/sim/FIR_design_1_c_addsub_4_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jul 17 11:12:52 2025
+# Process ID: 15216
+# Current directory: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_Bit_width_Casting_0_1_synth_1
+# Command line: vivado.exe -log FIR_design_1_Bit_width_Casting_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_design_1_Bit_width_Casting_0_1.tcl
+# Log file: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_Bit_width_Casting_0_1_synth_1/FIR_design_1_Bit_width_Casting_0_1.vds
+# Journal file: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_Bit_width_Casting_0_1_synth_1\vivado.jou
+# Running On: MACKIESs_PC, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 6, Host memory: 16905 MB
+#-----------------------------------------------------------
+source FIR_design_1_Bit_width_Casting_0_1.tcl -notrace

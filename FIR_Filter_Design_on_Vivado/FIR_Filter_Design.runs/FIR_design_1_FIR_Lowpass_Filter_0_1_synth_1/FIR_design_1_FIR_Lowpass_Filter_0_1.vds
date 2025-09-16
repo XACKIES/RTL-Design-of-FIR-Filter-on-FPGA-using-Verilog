@@ -1,0 +1,489 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jul 17 11:12:52 2025
+# Process ID: 15932
+# Current directory: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_FIR_Lowpass_Filter_0_1_synth_1
+# Command line: vivado.exe -log FIR_design_1_FIR_Lowpass_Filter_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_design_1_FIR_Lowpass_Filter_0_1.tcl
+# Log file: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_FIR_Lowpass_Filter_0_1_synth_1/FIR_design_1_FIR_Lowpass_Filter_0_1.vds
+# Journal file: C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_FIR_Lowpass_Filter_0_1_synth_1\vivado.jou
+# Running On: MACKIESs_PC, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 6, Host memory: 16905 MB
+#-----------------------------------------------------------
+source FIR_design_1_FIR_Lowpass_Filter_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 477.461 ; gain = 182.930
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: FIR_design_1_FIR_Lowpass_Filter_0_1
+Command: synth_design -top FIR_design_1_FIR_Lowpass_Filter_0_1 -part xc7k70tfbv676-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27360
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 932.316 ; gain = 437.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIR_design_1_FIR_Lowpass_Filter_0_1' [c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.gen/sources_1/bd/FIR_design_1/ip/FIR_design_1_FIR_Lowpass_Filter_0_1/synth/FIR_design_1_FIR_Lowpass_Filter_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'FIR_Lowpass_Filter' [C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.srcs/sources_1/new/FIR_Lowpass_Filter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_Lowpass_Filter' (0#1) [C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.srcs/sources_1/new/FIR_Lowpass_Filter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_design_1_FIR_Lowpass_Filter_0_1' (0#1) [c:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.gen/sources_1/bd/FIR_design_1/ip/FIR_design_1_FIR_Lowpass_Filter_0_1/synth/FIR_design_1_FIR_Lowpass_Filter_0_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element sum_reg was removed.  [C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.srcs/sources_1/new/FIR_Lowpass_Filter.v:77]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1041.961 ; gain = 547.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1041.961 ; gain = 547.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1041.961 ; gain = 547.570
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1041.961 ; gain = 547.570
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP inst/products[40], operation Mode is: A''*(B:0x13).
+DSP Report: register inst/delay_line_reg[39] is absorbed into DSP inst/products[40].
+DSP Report: register inst/delay_line_reg[40] is absorbed into DSP inst/products[40].
+DSP Report: operator inst/products[40] is absorbed into DSP inst/products[40].
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A2*(B:0x13).
+DSP Report: register inst/delay_line_reg[0] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[0] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0xf).
+DSP Report: register inst/delay_line_reg[38] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[39] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[39] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x9).
+DSP Report: register inst/delay_line_reg[37] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[38] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[38] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3fffd).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[37] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ffe8).
+DSP Report: register inst/delay_line_reg[35] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[36] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[36] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ffc7).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[35] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ff9d).
+DSP Report: register inst/delay_line_reg[33] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[34] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[34] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ff71).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[33] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ff4f).
+DSP Report: register inst/delay_line_reg[31] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[32] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[32] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ff47).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[31] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ff69).
+DSP Report: register inst/delay_line_reg[29] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[30] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[30] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ffc4).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[29] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x63).
+DSP Report: register inst/delay_line_reg[27] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[28] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[28] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x145).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[27] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x262).
+DSP Report: register inst/delay_line_reg[25] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[26] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[26] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3a5).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[25] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x4f2).
+DSP Report: register inst/delay_line_reg[23] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[24] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[24] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x627).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[23] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x722).
+DSP Report: register inst/delay_line_reg[21] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[22] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[22] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x7c6).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[21] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x7ff).
+DSP Report: register inst/delay_line_reg[19] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[20] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[20] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x7c6).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[19] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x722).
+DSP Report: register inst/delay_line_reg[17] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[18] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[18] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x627).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[17] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x4f2).
+DSP Report: register inst/delay_line_reg[15] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[16] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[16] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3a5).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[15] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x262).
+DSP Report: register inst/delay_line_reg[13] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[14] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[14] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x145).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[13] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x63).
+DSP Report: register inst/delay_line_reg[11] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[12] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[12] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ffc4).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[11] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ff69).
+DSP Report: register inst/delay_line_reg[9] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[10] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[10] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ff47).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[9] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ff4f).
+DSP Report: register inst/delay_line_reg[7] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[8] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[8] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ff71).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[7] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ff9d).
+DSP Report: register inst/delay_line_reg[5] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[6] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[6] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+ACIN*(B:0x3ffc7).
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[5] is absorbed into DSP inst/data_out0.
+DSP Report: Generating DSP inst/data_out0, operation Mode is: PCIN+A''*(B:0x3ffe8).
+DSP Report: register inst/delay_line_reg[3] is absorbed into DSP inst/data_out0.
+DSP Report: register inst/delay_line_reg[4] is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/data_out0 is absorbed into DSP inst/data_out0.
+DSP Report: operator inst/products[4] is absorbed into DSP inst/data_out0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1213.773 ; gain = 719.383
+---------------------------------------------------------------------------------
+ Sort Area is  inst/products[40]_0 : 0 0 : 277 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 1 : 385 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 2 : 327 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 3 : 312 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 4 : 257 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 5 : 321 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 6 : 352 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 7 : 590 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 8 : 611 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 9 : 639 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 10 : 611 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 11 : 639 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 12 : 352 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 13 : 590 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 14 : 464 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 15 : 827 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 16 : 814 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 17 : 858 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 18 : 656 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 19 : 858 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 20 : 656 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 21 : 858 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 22 : 656 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 23 : 858 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 24 : 656 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 25 : 858 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 26 : 814 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 27 : 827 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 28 : 464 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 29 : 590 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 30 : 352 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 31 : 639 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 32 : 611 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 33 : 639 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 34 : 611 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 35 : 590 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 36 : 352 22092 : Used 1 time 0
+ Sort Area is  inst/products[40]_0 : 0 37 : 321 22092 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_Lowpass_Filter | A''*(B:0x13)          | 16     | 6      | -      | -      | 22     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A2*(B:0x13)      | 16     | 6      | -      | -      | 41     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0xf)      | 16     | 5      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x9)      | 16     | 5      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3fffd) | 16     | 3      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ffe8)  | 16     | 6      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ffc7) | 16     | 7      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ff9d)  | 16     | 8      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ff71) | 16     | 9      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ff4f)  | 16     | 9      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ff47) | 16     | 9      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ff69)  | 16     | 9      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ffc4) | 16     | 7      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x63)     | 16     | 8      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x145)   | 16     | 10     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x262)    | 16     | 11     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3a5)   | 16     | 11     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x4f2)    | 16     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x627)   | 16     | 12     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x722)    | 16     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x7c6)   | 16     | 12     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x7ff)    | 16     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x7c6)   | 16     | 12     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x722)    | 16     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x627)   | 16     | 12     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x4f2)    | 16     | 12     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3a5)   | 16     | 11     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x262)    | 16     | 11     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x145)   | 16     | 10     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x63)     | 16     | 8      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ffc4) | 16     | 7      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ff69)  | 16     | 9      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ff47) | 16     | 9      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ff4f)  | 16     | 9      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ff71) | 16     | 9      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ff9d)  | 16     | 8      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+ACIN*(B:0x3ffc7) | 16     | 7      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*(B:0x3ffe8)  | 16     | 6      | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1217.406 ; gain = 723.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1217.406 ; gain = 723.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_Lowpass_Filter | A''*B       | 30     | 5      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A'*B   | 30     | 0      | -      | -      | 0      | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 4      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 4      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 7      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 9      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 10     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 10     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 11     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 11     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 11     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 11     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 11     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 11     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 11     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 11     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 11     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 10     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 10     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 9      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 7      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A*B    | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FIR_Lowpass_Filter | PCIN+A''*B  | 30     | 18     | -      | -      | 41     | 2    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    53|
+|2     |DSP48E1 |    38|
+|3     |LUT1    |     5|
+|4     |LUT2    |   182|
+|5     |LUT3    |     3|
+|6     |LUT4    |    15|
+|7     |FDRE    |   665|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |   961|
+|2     |  inst   |FIR_Lowpass_Filter |   961|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:58 . Memory (MB): peak = 1217.422 ; gain = 723.031
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1230.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1323.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f2f16123
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:01:04 . Memory (MB): peak = 1323.160 ; gain = 833.738
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1632.980 ; gain = 0.074
+INFO: [Common 17-1381] The checkpoint 'C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_FIR_Lowpass_Filter_0_1_synth_1/FIR_design_1_FIR_Lowpass_Filter_0_1.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1632.980 ; gain = 309.820
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP FIR_design_1_FIR_Lowpass_Filter_0_1, cache-ID = b3b73b0c805cc6bc
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1635.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/BC_Final_Project/hdl/projects/FIR_Filter_Design/FIR_Filter_Design.runs/FIR_design_1_FIR_Lowpass_Filter_0_1_synth_1/FIR_design_1_FIR_Lowpass_Filter_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIR_design_1_FIR_Lowpass_Filter_0_1_utilization_synth.rpt -pb FIR_design_1_FIR_Lowpass_Filter_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 17 11:14:39 2025...
