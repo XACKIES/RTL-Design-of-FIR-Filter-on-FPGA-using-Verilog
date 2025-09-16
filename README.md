@@ -76,3 +76,47 @@ Verilog Code : [FIR Filter.v](https://github.com/XACKIES/RTL-Design-of-FIR-Filte
 ## Simulation Result
 
 ![pic4](https://github.com/XACKIES/RTL-Design-of-a-FIR-Filter-on-FPGA-using-Verilog/blob/main/Doc/Result_of_Simulation.png)
+
+----
+
+
+##  Applications
+
+- **Digital Communication Systems**  
+  Channel equalization, matched filtering, and pulse-shaping for modulation schemes (QPSK, OFDM, FSK).  
+
+- **Software-Defined Radio (SDR)**  
+  Band-limiting, channel filtering, and interference suppression in FPGA/ASIC SDR pipelines.  
+
+- **Audio Signal Processing**  
+  High-fidelity filtering for EQ, crossover networks, or noise shaping.  
+
+- **Biomedical Signal Processing**  
+  ECG/EKG noise removal, EEG feature extraction, or filtering physiological signals.  
+
+- **Radar / Sonar / Imaging**  
+  Clutter suppression, beamforming pre-processing, and matched-filter detection.  
+
+
+---
+
+##  Future Extensions
+
+- **Coefficient Reloading (Run-Time Programmable FIR)**  
+  Enable dynamic filter reconfiguration for adaptive systems.  
+
+- **Parallel Multiply-Accumulate (MAC) Pipeline**  
+  Improve throughput for high-sample-rate FPGA/ASIC applications.  
+
+- **Symmetry Optimization**  
+  Exploit coefficient symmetry to reduce multipliers and hardware cost.  
+
+- **Multi-Rate FIR Structures**  
+  Integrate decimation/interpolation for efficient sample-rate conversion.  
+
+- **Windowing & Design Automation**  
+  Add automated coefficient generation (e.g., Hamming, Blackman, Kaiser) for flexible filter design.  
+
+- **AI-Assisted FIR**  
+  Use neural networks or ML-based methods to adapt filter coefficients in real time for non-stationary environments.  
+
